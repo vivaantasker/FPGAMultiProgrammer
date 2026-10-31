@@ -1,0 +1,16 @@
+# Vivado-generated files
+.Xil/
+.cache/
+.ip_user_files/
+*.jou
+*.log
+*.str
+*.wdb
+*.vcd
+*.pb
+*.dcp
+*.runs/
+*.sim/
+
+# Keep a consciously selected waveform config if committed
+# (do not ignore *.wcfg globally)

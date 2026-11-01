@@ -1,0 +1,3189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Xcrg Code Coverage Report - File</title>	
+<link type="text/css" rel="stylesheet" href="cssCodeCov/file.css">
+
+<!--script type="text/javascript" src=".js/.stickyheader.js"></script-->  
+
+</head>
+
+
+<body>
+
+<div class='header'>
+<a  class='logo'>  </a>
+<div class='header-right'>
+<a href='dashboard.html'>Dashboard</a>
+<a href='files.html'>Files</a>
+<a href='modules.html'>Modules</a>
+</div>
+</div>
+<br clear=all>
+
+<div class=fader>
+
+<div class = fileHTMLlayout>
+
+<div class='fileSummary'>
+<font size='2' face='verdana' padding-left:'2px'><b> File Summary of /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv </b></font>
+<br clear=all>
+<br clear=all>
+<font face='arial' color=black style='font-size: 12px'>
+<table class='fileSummaryTable'>
+<tr>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='50px'> File ID </td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='60px'> Modules Count </td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='100px'> Total Instances Count </td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='80px'> Total Lines</td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='80px'> Total Statements</td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='80px'> Statement Coverage Score</td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='70px'> Show Statement Coverage </td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='80px'> Branch Coverage Score</td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='70px'> Show Branch Coverage </td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='80px'> Condition Coverage Score</td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='70px'> Show Condition Coverage </td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='80px'> Toggle Coverage Score</td>
+<td class='fileSummaryTable' bgcolor='#BCC7CC' width='70px'> Show Toggle Coverage </td>
+</tr>
+<tr>
+<td class='fileSummaryTable'>11</td>
+<td class='fileSummaryTable'>1</td>
+<td class='fileSummaryTable'>2</td>
+<td class='fileSummaryTable'>93</td>
+<td class='fileSummaryTable'>99</td>
+<td class='fileSummaryTable'>84.8485</td>
+<td class='fileSummaryTable' bgcolor='#FFFFFF' align='center'>
+<label class = 'fileLineCovContainer'>
+<input type='checkbox' id='checkbox_file_linecov' onclick="checkdisplay('checkbox_file_linecov', 'file_linecov');
+openFileContent('button_file_linecov');">
+<span class='fileLineCovCheckmark'> </span> </label>
+</td>
+<td class='fileSummaryTable'>81.4815</td>
+<td class='fileSummaryTable' bgcolor='#FFFFFF' align='center'>
+<label class = 'fileBranchCovContainer'>
+<input type='checkbox' id='checkbox_file_branchcov' onclick="checkdisplay('checkbox_file_branchcov', 'file_branchcov');
+openFileContent('button_file_branchcov');">
+<span class='fileBranchCovCheckmark'> </span> </label>
+</td>
+<td class='fileSummaryTable'>76.6667</td>
+<td class='fileSummaryTable' bgcolor='#FFFFFF' align='center'>
+<label class = 'fileCondCovContainer'>
+<input type='checkbox' id='checkbox_file_condcov' onclick="checkdisplay('checkbox_file_condcov', 'file_condcov');
+openFileContent('button_file_condcov');">
+<span class='fileCondCovCheckmark'> </span> </label>
+</td>
+<td class='fileSummaryTable'>9.39</td>
+<td class='fileSummaryTable' bgcolor='#FFFFFF' align='center'>
+<label class = 'fileToggleCovContainer'>
+<input type='checkbox' id='checkbox_file_togglecov' onclick="checkdisplay('checkbox_file_togglecov', 'file_togglecov');
+openFileContent('button_file_togglecov');">
+<span class='fileToggleCovCheckmark'> </span> </label>
+</td>
+</tr>
+</table>
+</font>
+</div>
+<hr>
+<div class ='linesSection' style='padding-left:20px; padding-right:20px;'>
+<font face='arial' color=black style='font-size: 14px'>
+<div style='display:none' id='file_linecov'>
+<button class='fileCollapsible' id='button_file_linecov'> <font size='4' color=#009933> &#9776; </font>
+ Statement Coverage of File 11 : /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv</button> 
+<div class='fileContent'>
+<br clear=all>
+<font size='2' face='arial' style='padding-left:6px'> Statement Coverage Summary for File : /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv</font>
+<br clear=all>
+<table class='fileScoreTable'>
+<tr>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Total Statements </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Covered Statements </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Uncovered Statements </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Statement Coverage Score </th>
+</tr>
+<tr>
+<td class='fileScoreTable'>99</td>
+<td class='fileScoreTable' bgcolor='#FFFFC2'>84</td>
+<td class='fileScoreTable' bgcolor='#FFD2D2'>15</td>
+<td class='fileScoreTable' bgcolor='#98FF98'>84.8485</td>
+</tr>
+</table>
+<br clear=all>
+<div class='lineCoverageTable'>
+<table class='lineTable'>
+<tr>
+<th class='lineTable' style='background-color:#ccffff; line-height:0;' width='80px'> LineNumber </th>
+<th class='lineTable' style='background-color:#FFEB99; line-height:0;'> LineContent </th>
+<th class='lineTable' style='background-color:#80FFBF; line-height:1;' width='140px'> Execution Count </th>
+<th class='lineTable' style='background-color:#FFE6E6; line-height:1;' width='140px'> Num Of Statements </th>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>1</td>
+<td class='lineTable'> <pre class='codegrey'>`timescale 1ns/1ps</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>2</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>3</td>
+<td class='lineTable'> <pre class='codegrey'>// Single-entry, backpressure-aware DMA stream bridge.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>4</td>
+<td class='lineTable'> <pre class='codegrey'>// transfer_length is in bits and must be non-zero and byte-aligned.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>5</td>
+<td class='lineTable'> <pre class='codegrey'>// The upstream memory manager consumes source_address; this block validates</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>6</td>
+<td class='lineTable'> <pre class='codegrey'>// and forwards its stream without generating memory reads itself.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>7</td>
+<td class='lineTable'> <pre class='codegrey'>module dma_controller #(</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>8</td>
+<td class='lineTable'> <pre class='codegrey'>  parameter int DATA_WIDTH = 32</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>9</td>
+<td class='lineTable'> <pre class='codegrey'>)(</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>10</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic clk,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>11</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic rst_n,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>12</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic start,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>13</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic abort,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>14</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic [31:0] source_address,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>15</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic [31:0] transfer_length,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>16</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic [DATA_WIDTH-1:0] s_axis_tdata,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>17</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic [DATA_WIDTH/8-1:0] s_axis_tkeep,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>18</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic s_axis_tvalid,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>19</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic s_axis_tready,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>20</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic s_axis_tlast,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>21</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic [DATA_WIDTH-1:0] m_axis_tdata,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>22</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic [DATA_WIDTH/8-1:0] m_axis_tkeep,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>23</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic m_axis_tvalid,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>24</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic m_axis_tready,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>25</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic m_axis_tlast,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>26</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic done,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>27</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic error,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>28</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic busy</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>29</td>
+<td class='lineTable'> <pre class='codegrey'>);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>30</td>
+<td class='lineTable'> <pre class='codegrey'>  localparam int BYTES_PER_WORD = DATA_WIDTH / 8;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>31</td>
+<td class='lineTable'> <pre class='codegrey'>  localparam int COUNT_WIDTH = 33;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>32</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>33</td>
+<td class='lineTable'> <pre class='codegrey'>  logic active;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>34</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] expected_bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>35</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] input_bits_seen;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>36</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] output_bits_seen;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>37</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] input_beat_bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>38</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] output_beat_bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>39</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [BYTES_PER_WORD-1:0] input_expected_keep;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>40</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [BYTES_PER_WORD-1:0] output_expected_keep;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>41</td>
+<td class='lineTable'> <pre class='codegrey'>  logic input_expected_last;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>42</td>
+<td class='lineTable'> <pre class='codegrey'>  logic output_expected_last;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>43</td>
+<td class='lineTable'> <pre class='codegrey'>  logic input_keep_ok;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>44</td>
+<td class='lineTable'> <pre class='codegrey'>  logic output_keep_ok;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>45</td>
+<td class='lineTable'> <pre class='codegrey'>  logic input_fire;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>46</td>
+<td class='lineTable'> <pre class='codegrey'>  logic output_fire;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>47</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>48</td>
+<td class='lineTable'> <pre class='codegrey'>  function automatic logic [BYTES_PER_WORD-1:0] keep_for_bytes(input logic [31:0] nbytes);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>49</td>
+<td class='lineTable'> <pre class='codegrey'>    logic [BYTES_PER_WORD-1:0] result;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>50</td>
+<td class='lineTable'> <pre class='codegreen'>    result = '0;</pre> </td>
+<td class='lineTable'>78</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>51</td>
+<td class='lineTable'> <pre class='codegreen'>    for (int i = 0; i &lt BYTES_PER_WORD; i++) begin</pre> </td>
+<td class='lineTable'>312</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>52</td>
+<td class='lineTable'> <pre class='codegreen'>      if (i &lt nbytes) result[i] = 1'b1;</pre> </td>
+<td class='lineTable'>390</td>
+<td class='lineTable'>2</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>53</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>54</td>
+<td class='lineTable'> <pre class='codegreen'>    return result;</pre> </td>
+<td class='lineTable'>156</td>
+<td class='lineTable'>2</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>55</td>
+<td class='lineTable'> <pre class='codegrey'>  endfunction</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>56</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>57</td>
+<td class='lineTable'> <pre class='codegrey'>  function automatic logic keep_is_contiguous(input logic [BYTES_PER_WORD-1:0] keep);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>58</td>
+<td class='lineTable'> <pre class='codegrey'>    logic seen_zero;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>59</td>
+<td class='lineTable'> <pre class='codegrey'>    logic result;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>60</td>
+<td class='lineTable'> <pre class='codegreen'>    seen_zero = 1'b0;</pre> </td>
+<td class='lineTable'>362</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>61</td>
+<td class='lineTable'> <pre class='codegreen'>    result = 1'b1;</pre> </td>
+<td class='lineTable'>362</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>62</td>
+<td class='lineTable'> <pre class='codegreen'>    for (int i = 0; i &lt BYTES_PER_WORD; i++) begin</pre> </td>
+<td class='lineTable'>1448</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>63</td>
+<td class='lineTable'> <pre class='codegreen'>      if (keep[i] == 1'b0) begin</pre> </td>
+<td class='lineTable'>1448</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>64</td>
+<td class='lineTable'> <pre class='codegreen'>        seen_zero = 1'b1;</pre> </td>
+<td class='lineTable'>572</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>65</td>
+<td class='lineTable'> <pre class='codegreen'>      end else if (keep[i] == 1'b1) begin</pre> </td>
+<td class='lineTable'>876</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>66</td>
+<td class='lineTable'> <pre class='codegreen'>        if (seen_zero) result = 1'b0;</pre> </td>
+<td class='lineTable'>836</td>
+<td class='lineTable'>2</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>67</td>
+<td class='lineTable'> <pre class='codegrey'>      end else begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>68</td>
+<td class='lineTable'> <pre class='codegreen'>        result = 1'b0;</pre> </td>
+<td class='lineTable'>40</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>69</td>
+<td class='lineTable'> <pre class='codegrey'>      end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>70</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>71</td>
+<td class='lineTable'> <pre class='codegreen'>    return result;</pre> </td>
+<td class='lineTable'>724</td>
+<td class='lineTable'>2</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>72</td>
+<td class='lineTable'> <pre class='codegrey'>  endfunction</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>73</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>74</td>
+<td class='lineTable'> <pre class='codegrey'>  function automatic logic [COUNT_WIDTH-1:0] keep_to_bits(input logic [BYTES_PER_WORD-1:0] keep);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>75</td>
+<td class='lineTable'> <pre class='codegrey'>    logic [COUNT_WIDTH-1:0] bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>76</td>
+<td class='lineTable'> <pre class='codegreen'>    bits = '0;</pre> </td>
+<td class='lineTable'>1246</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>77</td>
+<td class='lineTable'> <pre class='codegreen'>    for (int i = 0; i &lt BYTES_PER_WORD; i++) begin</pre> </td>
+<td class='lineTable'>4984</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>78</td>
+<td class='lineTable'> <pre class='codegreen'>      if (keep[i]) bits = bits + 8;</pre> </td>
+<td class='lineTable'>7336</td>
+<td class='lineTable'>2</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>79</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>80</td>
+<td class='lineTable'> <pre class='codegreen'>    return bits;</pre> </td>
+<td class='lineTable'>2492</td>
+<td class='lineTable'>2</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>81</td>
+<td class='lineTable'> <pre class='codegrey'>  endfunction</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>82</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>83</td>
+<td class='lineTable'> <pre class='codegrey'>  always_comb begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>84</td>
+<td class='lineTable'> <pre class='codegreen'>    input_beat_bits  = keep_to_bits(s_axis_tkeep);</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>85</td>
+<td class='lineTable'> <pre class='codegreen'>    output_beat_bits = keep_to_bits(m_axis_tkeep);</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>86</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>87</td>
+<td class='lineTable'> <pre class='codegreen'>    input_expected_keep  = '0;</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>88</td>
+<td class='lineTable'> <pre class='codegreen'>    output_expected_keep = '0;</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>89</td>
+<td class='lineTable'> <pre class='codegreen'>    if (active && (input_bits_seen &lt expected_bits)) begin</pre> </td>
+<td class='lineTable'>623</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>90</td>
+<td class='lineTable'> <pre class='codegreen'>      if ((expected_bits - input_bits_seen) &gt= DATA_WIDTH)</pre> </td>
+<td class='lineTable'>132</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>91</td>
+<td class='lineTable'> <pre class='codegreen'>        input_expected_keep = '1;</pre> </td>
+<td class='lineTable'>93</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>92</td>
+<td class='lineTable'> <pre class='codegrey'>      else</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>93</td>
+<td class='lineTable'> <pre class='codegreen'>        input_expected_keep = keep_for_bytes((expected_bits - input_bits_seen) / 8);</pre> </td>
+<td class='lineTable'>39</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>94</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>95</td>
+<td class='lineTable'> <pre class='codegreen'>    if (active && (output_bits_seen &lt expected_bits)) begin</pre> </td>
+<td class='lineTable'>623</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>96</td>
+<td class='lineTable'> <pre class='codegreen'>      if ((expected_bits - output_bits_seen) &gt= DATA_WIDTH)</pre> </td>
+<td class='lineTable'>171</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>97</td>
+<td class='lineTable'> <pre class='codegreen'>        output_expected_keep = '1;</pre> </td>
+<td class='lineTable'>132</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>98</td>
+<td class='lineTable'> <pre class='codegrey'>      else</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>99</td>
+<td class='lineTable'> <pre class='codegreen'>        output_expected_keep = keep_for_bytes((expected_bits - output_bits_seen) / 8);</pre> </td>
+<td class='lineTable'>39</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>100</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>101</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>102</td>
+<td class='lineTable'> <pre class='codegreen'>    input_expected_last  = ((input_bits_seen + input_beat_bits) == expected_bits);</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>103</td>
+<td class='lineTable'> <pre class='codegreen'>    output_expected_last = ((output_bits_seen + output_beat_bits) == expected_bits);</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>104</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>105</td>
+<td class='lineTable'> <pre class='codegreen'>    input_keep_ok = active && keep_is_contiguous(s_axis_tkeep) &&</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>106</td>
+<td class='lineTable'> <pre class='codegrey'>                    (input_beat_bits != 0) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>107</td>
+<td class='lineTable'> <pre class='codegrey'>                    (s_axis_tkeep == input_expected_keep) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>108</td>
+<td class='lineTable'> <pre class='codegrey'>                    ((input_bits_seen + input_beat_bits) &lt= expected_bits);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>109</td>
+<td class='lineTable'> <pre class='codegreen'>    output_keep_ok = active && keep_is_contiguous(m_axis_tkeep) &&</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>110</td>
+<td class='lineTable'> <pre class='codegrey'>                     (output_beat_bits != 0) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>111</td>
+<td class='lineTable'> <pre class='codegrey'>                     (m_axis_tkeep == output_expected_keep) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>112</td>
+<td class='lineTable'> <pre class='codegrey'>                     ((output_bits_seen + output_beat_bits) &lt= expected_bits);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>113</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>114</td>
+<td class='lineTable'> <pre class='codegrey'>    // A beat is accepted only when the transaction still expects source data</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>115</td>
+<td class='lineTable'> <pre class='codegrey'>    // and the one-entry output register is empty or will be consumed this edge.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>116</td>
+<td class='lineTable'> <pre class='codegrey'>    // Gating start/abort prevents acknowledging a source beat on a cycle when</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>117</td>
+<td class='lineTable'> <pre class='codegrey'>    // the transaction is being cancelled/restarted.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>118</td>
+<td class='lineTable'> <pre class='codegreen'>    s_axis_tready = active && !start && !abort &&</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>119</td>
+<td class='lineTable'> <pre class='codegrey'>                    (input_bits_seen &lt expected_bits) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>120</td>
+<td class='lineTable'> <pre class='codegrey'>                    (!m_axis_tvalid || m_axis_tready);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>121</td>
+<td class='lineTable'> <pre class='codegreen'>    input_fire  = s_axis_tvalid && s_axis_tready;</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>122</td>
+<td class='lineTable'> <pre class='codegreen'>    output_fire = m_axis_tvalid && m_axis_tready;</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>123</td>
+<td class='lineTable'> <pre class='codegreen'>    busy = active;</pre> </td>
+<td class='lineTable'>6420</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>124</td>
+<td class='lineTable'> <pre class='codegrey'>  end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>125</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>126</td>
+<td class='lineTable'> <pre class='codegrey'>  always_ff @(posedge clk or negedge rst_n) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>127</td>
+<td class='lineTable'> <pre class='codegreen'>    if (!rst_n) begin</pre> </td>
+<td class='lineTable'>32709</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>128</td>
+<td class='lineTable'> <pre class='codegreen'>      active           &lt= 1'b0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>129</td>
+<td class='lineTable'> <pre class='codegreen'>      expected_bits    &lt= '0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>130</td>
+<td class='lineTable'> <pre class='codegreen'>      input_bits_seen  &lt= '0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>131</td>
+<td class='lineTable'> <pre class='codegreen'>      output_bits_seen &lt= '0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>132</td>
+<td class='lineTable'> <pre class='codegreen'>      m_axis_tdata     &lt= '0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>133</td>
+<td class='lineTable'> <pre class='codegreen'>      m_axis_tkeep     &lt= '0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>134</td>
+<td class='lineTable'> <pre class='codegreen'>      m_axis_tvalid    &lt= 1'b0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>135</td>
+<td class='lineTable'> <pre class='codegreen'>      m_axis_tlast     &lt= 1'b0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>136</td>
+<td class='lineTable'> <pre class='codegreen'>      done             &lt= 1'b0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>137</td>
+<td class='lineTable'> <pre class='codegreen'>      error            &lt= 1'b0;</pre> </td>
+<td class='lineTable'>929</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>138</td>
+<td class='lineTable'> <pre class='codegrey'>    end else begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>139</td>
+<td class='lineTable'> <pre class='codegrey'>      // done/error are one-cycle events; the controller is responsible for</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>140</td>
+<td class='lineTable'> <pre class='codegrey'>      // latching completion/error status if it needs persistence.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>141</td>
+<td class='lineTable'> <pre class='codegreen'>      done  &lt= 1'b0;</pre> </td>
+<td class='lineTable'>58666</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>142</td>
+<td class='lineTable'> <pre class='codegreen'>      error &lt= 1'b0;</pre> </td>
+<td class='lineTable'>58666</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>143</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>144</td>
+<td class='lineTable'> <pre class='codegreen'>      if (start && active) begin</pre> </td>
+<td class='lineTable'>32608</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>145</td>
+<td class='lineTable'> <pre class='codegrey'>        // A second start while busy is a protocol error.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>146</td>
+<td class='lineTable'> <pre class='codered'>        active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>147</td>
+<td class='lineTable'> <pre class='codered'>        m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>148</td>
+<td class='lineTable'> <pre class='codered'>        m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>149</td>
+<td class='lineTable'> <pre class='codered'>        error         &lt= 1'b1;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>150</td>
+<td class='lineTable'> <pre class='codegreen'>      end else if (abort && active) begin</pre> </td>
+<td class='lineTable'>32608</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>151</td>
+<td class='lineTable'> <pre class='codered'>        active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>152</td>
+<td class='lineTable'> <pre class='codered'>        m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>153</td>
+<td class='lineTable'> <pre class='codered'>        m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>154</td>
+<td class='lineTable'> <pre class='codered'>        error         &lt= 1'b1;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>155</td>
+<td class='lineTable'> <pre class='codegreen'>      end else if (start && !active) begin</pre> </td>
+<td class='lineTable'>32608</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>156</td>
+<td class='lineTable'> <pre class='codegreen'>        m_axis_tvalid    &lt= 1'b0;</pre> </td>
+<td class='lineTable'>47</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>157</td>
+<td class='lineTable'> <pre class='codegreen'>        m_axis_tlast     &lt= 1'b0;</pre> </td>
+<td class='lineTable'>47</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>158</td>
+<td class='lineTable'> <pre class='codegreen'>        input_bits_seen  &lt= '0;</pre> </td>
+<td class='lineTable'>47</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>159</td>
+<td class='lineTable'> <pre class='codegreen'>        output_bits_seen &lt= '0;</pre> </td>
+<td class='lineTable'>47</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>160</td>
+<td class='lineTable'> <pre class='codegreen'>        if ((transfer_length == 0) || (transfer_length[2:0] != 0) ||</pre> </td>
+<td class='lineTable'>14</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>161</td>
+<td class='lineTable'> <pre class='codegrey'>            (DATA_WIDTH &lt 8) || ((DATA_WIDTH % 8) != 0)) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>162</td>
+<td class='lineTable'> <pre class='codered'>          active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>163</td>
+<td class='lineTable'> <pre class='codered'>          expected_bits &lt= '0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>164</td>
+<td class='lineTable'> <pre class='codered'>          error         &lt= 1'b1;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>165</td>
+<td class='lineTable'> <pre class='codegrey'>        end else begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>166</td>
+<td class='lineTable'> <pre class='codegreen'>          active        &lt= 1'b1;</pre> </td>
+<td class='lineTable'>25</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>167</td>
+<td class='lineTable'> <pre class='codegreen'>          expected_bits &lt= {1'b0, transfer_length};</pre> </td>
+<td class='lineTable'>25</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>168</td>
+<td class='lineTable'> <pre class='codegrey'>        end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>169</td>
+<td class='lineTable'> <pre class='codegreen'>      end else if (active) begin</pre> </td>
+<td class='lineTable'>32594</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>170</td>
+<td class='lineTable'> <pre class='codegrey'>        // Any malformed accepted beat aborts the transfer. If input and output</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>171</td>
+<td class='lineTable'> <pre class='codegrey'>        // handshakes coincide, an error on either side takes priority; no stale</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>172</td>
+<td class='lineTable'> <pre class='codegrey'>        // valid beat is retained after the transaction has failed.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>173</td>
+<td class='lineTable'> <pre class='codegreen'>        if ((output_fire && (!output_keep_ok || (m_axis_tlast != output_expected_last))) ||</pre> </td>
+<td class='lineTable'>8963</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>174</td>
+<td class='lineTable'> <pre class='codegrey'>            (input_fire  && (!input_keep_ok  || (s_axis_tlast != input_expected_last)))) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>175</td>
+<td class='lineTable'> <pre class='codered'>          active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>176</td>
+<td class='lineTable'> <pre class='codered'>          m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>177</td>
+<td class='lineTable'> <pre class='codered'>          m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>178</td>
+<td class='lineTable'> <pre class='codered'>          error         &lt= 1'b1;</pre> </td>
+<td class='lineTable'> 0 </td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>179</td>
+<td class='lineTable'> <pre class='codegrey'>        end else begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>180</td>
+<td class='lineTable'> <pre class='codegrey'>          // Pop first. Crucial fix: clear TVALID on every non-final output</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>181</td>
+<td class='lineTable'> <pre class='codegrey'>          // handshake. If a new input beat is accepted on the same edge, the</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>182</td>
+<td class='lineTable'> <pre class='codegrey'>          // input block below replaces this empty slot and reasserts TVALID.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>183</td>
+<td class='lineTable'> <pre class='codegreen'>          if (output_fire) begin</pre> </td>
+<td class='lineTable'>8963</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>184</td>
+<td class='lineTable'> <pre class='codegreen'>            output_bits_seen &lt= output_bits_seen + output_beat_bits;</pre> </td>
+<td class='lineTable'>39</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>185</td>
+<td class='lineTable'> <pre class='codegreen'>            if (m_axis_tlast) begin</pre> </td>
+<td class='lineTable'>39</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>186</td>
+<td class='lineTable'> <pre class='codegreen'>              active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'>43</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>187</td>
+<td class='lineTable'> <pre class='codegreen'>              m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'>43</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>188</td>
+<td class='lineTable'> <pre class='codegreen'>              m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'>43</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>189</td>
+<td class='lineTable'> <pre class='codegreen'>              done          &lt= 1'b1;</pre> </td>
+<td class='lineTable'>43</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>190</td>
+<td class='lineTable'> <pre class='codegrey'>            end else begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>191</td>
+<td class='lineTable'> <pre class='codegreen'>              m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'>46</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>192</td>
+<td class='lineTable'> <pre class='codegreen'>              m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'>46</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>193</td>
+<td class='lineTable'> <pre class='codegrey'>            end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>194</td>
+<td class='lineTable'> <pre class='codegrey'>          end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>195</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>196</td>
+<td class='lineTable'> <pre class='codegrey'>          // Push. This later assignment intentionally replaces a beat popped</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>197</td>
+<td class='lineTable'> <pre class='codegrey'>          // in the same cycle, permitting one accepted beat per clock at full</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>198</td>
+<td class='lineTable'> <pre class='codegrey'>          // throughput while preserving stable output under backpressure.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>199</td>
+<td class='lineTable'> <pre class='codegreen'>          if (input_fire) begin</pre> </td>
+<td class='lineTable'>8963</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>200</td>
+<td class='lineTable'> <pre class='codegreen'>            input_bits_seen &lt= input_bits_seen + input_beat_bits;</pre> </td>
+<td class='lineTable'>159</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>201</td>
+<td class='lineTable'> <pre class='codegreen'>            m_axis_tdata    &lt= s_axis_tdata;</pre> </td>
+<td class='lineTable'>159</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>202</td>
+<td class='lineTable'> <pre class='codegreen'>            m_axis_tkeep    &lt= s_axis_tkeep;</pre> </td>
+<td class='lineTable'>159</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>203</td>
+<td class='lineTable'> <pre class='codegreen'>            m_axis_tvalid   &lt= 1'b1;</pre> </td>
+<td class='lineTable'>159</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>204</td>
+<td class='lineTable'> <pre class='codegreen'>            m_axis_tlast    &lt= s_axis_tlast;</pre> </td>
+<td class='lineTable'>159</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>205</td>
+<td class='lineTable'> <pre class='codegrey'>          end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>206</td>
+<td class='lineTable'> <pre class='codegrey'>        end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>207</td>
+<td class='lineTable'> <pre class='codegrey'>      end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>208</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>209</td>
+<td class='lineTable'> <pre class='codegrey'>  end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>210</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>211</td>
+<td class='lineTable'> <pre class='codegrey'>  // Address decode is performed by memory_manager in this streaming design.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>212</td>
+<td class='lineTable'> <pre class='codegrey'>  logic unused_source_address;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>213</td>
+<td class='lineTable'> <pre class='codegreen'>  always_comb unused_source_address = ^source_address;</pre> </td>
+<td class='lineTable'>36</td>
+<td class='lineTable'>1</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>214</td>
+<td class='lineTable'> <pre class='codegrey'>endmodule</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+</table>
+</div>
+<br clear=all>
+</div>
+<br clear=all>
+</div>
+</font>
+</div>
+<div class ='linesSection' style='padding-left:20px; padding-right:20px;'>
+<font face='arial' color=black style='font-size: 14px'>
+<div style='display:none' id='file_branchcov'>
+<button class='fileBranchCollapsible' id='button_file_branchcov'> <font size='4' color=#003399> &#8380; </font>
+ Branch Coverage of File 11 : /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv</button> 
+<div class='fileBranchContent'>
+<br clear=all>
+<font size='2' face='arial' style='padding-left:6px'>
+Branch Coverage Summary for File : /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv
+</font>
+<br clear=all>
+<table class='fileScoreTable'>
+<tr>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Total Branches </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Covered Branches </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Uncovered Branches </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Branch Coverage Score </th>
+</tr>
+<tr>
+<td class='fileScoreTable'>27</td>
+<td class='fileScoreTable'>22</td>
+<td class='fileScoreTable'>5</td>
+<td class='fileScoreTable' bgcolor='#98FF98'>81.4815</td>
+</tr>
+</table>
+<br clear=all>
+<div class='branchCoverageTable'>
+<table class='lineTable'>
+<tr>
+<th class='lineTable' style='background-color:#FFDD99; line-height:0;' width='80px'> LineNumber </th>
+<th class='lineTable' style='background-color:#FFEB99; line-height:0;'> Branch </th>
+<th class='lineTable' style='background-color:#80FFBF; line-height:1;' width='120px'> Desicion Evaluated  </th>
+<th class='lineTable' style='background-color:#FFE6E6; line-height:1;' width='140px'> TRUE/FALSE Branch Execution Count[s]  </th>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>1</td>
+<td class='lineTable'> <pre class='codegrey'>`timescale 1ns/1ps</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>2</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>3</td>
+<td class='lineTable'> <pre class='codegrey'>// Single-entry, backpressure-aware DMA stream bridge.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>4</td>
+<td class='lineTable'> <pre class='codegrey'>// transfer_length is in bits and must be non-zero and byte-aligned.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>5</td>
+<td class='lineTable'> <pre class='codegrey'>// The upstream memory manager consumes source_address; this block validates</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>6</td>
+<td class='lineTable'> <pre class='codegrey'>// and forwards its stream without generating memory reads itself.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>7</td>
+<td class='lineTable'> <pre class='codegrey'>module dma_controller #(</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>8</td>
+<td class='lineTable'> <pre class='codegrey'>  parameter int DATA_WIDTH = 32</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>9</td>
+<td class='lineTable'> <pre class='codegrey'>)(</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>10</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic clk,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>11</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic rst_n,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>12</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic start,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>13</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic abort,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>14</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic [31:0] source_address,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>15</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic [31:0] transfer_length,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>16</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic [DATA_WIDTH-1:0] s_axis_tdata,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>17</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic [DATA_WIDTH/8-1:0] s_axis_tkeep,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>18</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic s_axis_tvalid,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>19</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic s_axis_tready,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>20</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic s_axis_tlast,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>21</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic [DATA_WIDTH-1:0] m_axis_tdata,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>22</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic [DATA_WIDTH/8-1:0] m_axis_tkeep,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>23</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic m_axis_tvalid,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>24</td>
+<td class='lineTable'> <pre class='codegrey'>  input  logic m_axis_tready,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>25</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic m_axis_tlast,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>26</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic done,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>27</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic error,</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>28</td>
+<td class='lineTable'> <pre class='codegrey'>  output logic busy</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>29</td>
+<td class='lineTable'> <pre class='codegrey'>);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>30</td>
+<td class='lineTable'> <pre class='codegrey'>  localparam int BYTES_PER_WORD = DATA_WIDTH / 8;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>31</td>
+<td class='lineTable'> <pre class='codegrey'>  localparam int COUNT_WIDTH = 33;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>32</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>33</td>
+<td class='lineTable'> <pre class='codegrey'>  logic active;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>34</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] expected_bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>35</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] input_bits_seen;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>36</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] output_bits_seen;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>37</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] input_beat_bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>38</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [COUNT_WIDTH-1:0] output_beat_bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>39</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [BYTES_PER_WORD-1:0] input_expected_keep;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>40</td>
+<td class='lineTable'> <pre class='codegrey'>  logic [BYTES_PER_WORD-1:0] output_expected_keep;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>41</td>
+<td class='lineTable'> <pre class='codegrey'>  logic input_expected_last;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>42</td>
+<td class='lineTable'> <pre class='codegrey'>  logic output_expected_last;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>43</td>
+<td class='lineTable'> <pre class='codegrey'>  logic input_keep_ok;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>44</td>
+<td class='lineTable'> <pre class='codegrey'>  logic output_keep_ok;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>45</td>
+<td class='lineTable'> <pre class='codegrey'>  logic input_fire;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>46</td>
+<td class='lineTable'> <pre class='codegrey'>  logic output_fire;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>47</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>48</td>
+<td class='lineTable'> <pre class='codegrey'>  function automatic logic [BYTES_PER_WORD-1:0] keep_for_bytes(input logic [31:0] nbytes);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>49</td>
+<td class='lineTable'> <pre class='codegrey'>    logic [BYTES_PER_WORD-1:0] result;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>50</td>
+<td class='lineTable'> <pre class='codegrey'>    result = '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>51</td>
+<td class='lineTable'> <pre class='codegrey'>    for (int i = 0; i &lt BYTES_PER_WORD; i++) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>52</td>
+<td class='lineTable'> <pre class='codegreen'>      if (i &lt nbytes) result[i] = 1'b1;</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 1</b></font></td>
+<td class='lineTable'>312</td>
+<td class='lineTable'>78T 234F </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable' align ='left'> <pre class='codered'> MISSING ELSE </pre> <font face='arial' color=orange style='font-size: 12px'><b> Branch 2</b></font></td>
+<td class='lineTable'> </td>
+<td class='lineTable'> 234</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>53</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>54</td>
+<td class='lineTable'> <pre class='codegrey'>    return result;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>55</td>
+<td class='lineTable'> <pre class='codegrey'>  endfunction</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>56</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>57</td>
+<td class='lineTable'> <pre class='codegrey'>  function automatic logic keep_is_contiguous(input logic [BYTES_PER_WORD-1:0] keep);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>58</td>
+<td class='lineTable'> <pre class='codegrey'>    logic seen_zero;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>59</td>
+<td class='lineTable'> <pre class='codegrey'>    logic result;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>60</td>
+<td class='lineTable'> <pre class='codegrey'>    seen_zero = 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>61</td>
+<td class='lineTable'> <pre class='codegrey'>    result = 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>62</td>
+<td class='lineTable'> <pre class='codegrey'>    for (int i = 0; i &lt BYTES_PER_WORD; i++) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>63</td>
+<td class='lineTable'> <pre class='codegreen'>      if (keep[i] == 1'b0) begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 3</b></font></td>
+<td class='lineTable'>1448</td>
+<td class='lineTable'>572T 876F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>64</td>
+<td class='lineTable'> <pre class='codegrey'>        seen_zero = 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>65</td>
+<td class='lineTable'> <pre class='codegrey'>      end else if (keep[i] == 1'b1) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>66</td>
+<td class='lineTable'> <pre class='codered'>        if (seen_zero) result = 1'b0;</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 4</b></font></td>
+<td class='lineTable'>836</td>
+<td class='lineTable'>0T 836F </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable' align ='left'> <pre class='codered'> MISSING ELSE </pre> <font face='arial' color=orange style='font-size: 12px'><b> Branch 5</b></font></td>
+<td class='lineTable'> </td>
+<td class='lineTable'> 836</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>67</td>
+<td class='lineTable'> <pre class='codegreen'>      end else begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 6</b></font></td>
+<td class='lineTable'>40</td>
+<td class='lineTable'>40T </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>68</td>
+<td class='lineTable'> <pre class='codegrey'>        result = 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>69</td>
+<td class='lineTable'> <pre class='codegrey'>      end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>70</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>71</td>
+<td class='lineTable'> <pre class='codegrey'>    return result;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>72</td>
+<td class='lineTable'> <pre class='codegrey'>  endfunction</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>73</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>74</td>
+<td class='lineTable'> <pre class='codegrey'>  function automatic logic [COUNT_WIDTH-1:0] keep_to_bits(input logic [BYTES_PER_WORD-1:0] keep);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>75</td>
+<td class='lineTable'> <pre class='codegrey'>    logic [COUNT_WIDTH-1:0] bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>76</td>
+<td class='lineTable'> <pre class='codegrey'>    bits = '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>77</td>
+<td class='lineTable'> <pre class='codegrey'>    for (int i = 0; i &lt BYTES_PER_WORD; i++) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>78</td>
+<td class='lineTable'> <pre class='codegreen'>      if (keep[i]) bits = bits + 8;</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 7</b></font></td>
+<td class='lineTable'>4984</td>
+<td class='lineTable'>2352T 2632F </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable' align ='left'> <pre class='codered'> MISSING ELSE </pre> <font face='arial' color=orange style='font-size: 12px'><b> Branch 8</b></font></td>
+<td class='lineTable'> </td>
+<td class='lineTable'> 2632</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>79</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>80</td>
+<td class='lineTable'> <pre class='codegrey'>    return bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>81</td>
+<td class='lineTable'> <pre class='codegrey'>  endfunction</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>82</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>83</td>
+<td class='lineTable'> <pre class='codegrey'>  always_comb begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>84</td>
+<td class='lineTable'> <pre class='codegrey'>    input_beat_bits  = keep_to_bits(s_axis_tkeep);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>85</td>
+<td class='lineTable'> <pre class='codegrey'>    output_beat_bits = keep_to_bits(m_axis_tkeep);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>86</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>87</td>
+<td class='lineTable'> <pre class='codegrey'>    input_expected_keep  = '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>88</td>
+<td class='lineTable'> <pre class='codegrey'>    output_expected_keep = '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>89</td>
+<td class='lineTable'> <pre class='codegrey'>    if (active && (input_bits_seen &lt expected_bits)) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable' align ='left'> <pre class='codered'> MISSING ELSE </pre> <font face='arial' color=orange style='font-size: 12px'><b> Branch 9</b></font></td>
+<td class='lineTable'> </td>
+<td class='lineTable'> 491</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>90</td>
+<td class='lineTable'> <pre class='codegreen'>      if ((expected_bits - input_bits_seen) &gt= DATA_WIDTH)</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 10</b></font></td>
+<td class='lineTable'>132</td>
+<td class='lineTable'>93T 39F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>91</td>
+<td class='lineTable'> <pre class='codegrey'>        input_expected_keep = '1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>92</td>
+<td class='lineTable'> <pre class='codegrey'>      else</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>93</td>
+<td class='lineTable'> <pre class='codegreen'>        input_expected_keep = keep_for_bytes((expected_bits - input_bits_seen) / 8);</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 11</b></font></td>
+<td class='lineTable'>39</td>
+<td class='lineTable'>39T </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>94</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>95</td>
+<td class='lineTable'> <pre class='codegrey'>    if (active && (output_bits_seen &lt expected_bits)) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable' align ='left'> <pre class='codered'> MISSING ELSE </pre> <font face='arial' color=orange style='font-size: 12px'><b> Branch 12</b></font></td>
+<td class='lineTable'> </td>
+<td class='lineTable'> 452</td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>96</td>
+<td class='lineTable'> <pre class='codegreen'>      if ((expected_bits - output_bits_seen) &gt= DATA_WIDTH)</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 13</b></font></td>
+<td class='lineTable'>171</td>
+<td class='lineTable'>132T 39F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>97</td>
+<td class='lineTable'> <pre class='codegrey'>        output_expected_keep = '1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>98</td>
+<td class='lineTable'> <pre class='codegrey'>      else</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>99</td>
+<td class='lineTable'> <pre class='codegreen'>        output_expected_keep = keep_for_bytes((expected_bits - output_bits_seen) / 8);</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 14</b></font></td>
+<td class='lineTable'>39</td>
+<td class='lineTable'>39T </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>100</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>101</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>102</td>
+<td class='lineTable'> <pre class='codegrey'>    input_expected_last  = ((input_bits_seen + input_beat_bits) == expected_bits);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>103</td>
+<td class='lineTable'> <pre class='codegrey'>    output_expected_last = ((output_bits_seen + output_beat_bits) == expected_bits);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>104</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>105</td>
+<td class='lineTable'> <pre class='codegrey'>    input_keep_ok = active && keep_is_contiguous(s_axis_tkeep) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>106</td>
+<td class='lineTable'> <pre class='codegrey'>                    (input_beat_bits != 0) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>107</td>
+<td class='lineTable'> <pre class='codegrey'>                    (s_axis_tkeep == input_expected_keep) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>108</td>
+<td class='lineTable'> <pre class='codegrey'>                    ((input_bits_seen + input_beat_bits) &lt= expected_bits);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>109</td>
+<td class='lineTable'> <pre class='codegrey'>    output_keep_ok = active && keep_is_contiguous(m_axis_tkeep) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>110</td>
+<td class='lineTable'> <pre class='codegrey'>                     (output_beat_bits != 0) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>111</td>
+<td class='lineTable'> <pre class='codegrey'>                     (m_axis_tkeep == output_expected_keep) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>112</td>
+<td class='lineTable'> <pre class='codegrey'>                     ((output_bits_seen + output_beat_bits) &lt= expected_bits);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>113</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>114</td>
+<td class='lineTable'> <pre class='codegrey'>    // A beat is accepted only when the transaction still expects source data</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>115</td>
+<td class='lineTable'> <pre class='codegrey'>    // and the one-entry output register is empty or will be consumed this edge.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>116</td>
+<td class='lineTable'> <pre class='codegrey'>    // Gating start/abort prevents acknowledging a source beat on a cycle when</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>117</td>
+<td class='lineTable'> <pre class='codegrey'>    // the transaction is being cancelled/restarted.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>118</td>
+<td class='lineTable'> <pre class='codegrey'>    s_axis_tready = active && !start && !abort &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>119</td>
+<td class='lineTable'> <pre class='codegrey'>                    (input_bits_seen &lt expected_bits) &&</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>120</td>
+<td class='lineTable'> <pre class='codegrey'>                    (!m_axis_tvalid || m_axis_tready);</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>121</td>
+<td class='lineTable'> <pre class='codegrey'>    input_fire  = s_axis_tvalid && s_axis_tready;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>122</td>
+<td class='lineTable'> <pre class='codegrey'>    output_fire = m_axis_tvalid && m_axis_tready;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>123</td>
+<td class='lineTable'> <pre class='codegrey'>    busy = active;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>124</td>
+<td class='lineTable'> <pre class='codegrey'>  end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>125</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>126</td>
+<td class='lineTable'> <pre class='codegrey'>  always_ff @(posedge clk or negedge rst_n) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>127</td>
+<td class='lineTable'> <pre class='codegreen'>    if (!rst_n) begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 15</b></font></td>
+<td class='lineTable'>32709</td>
+<td class='lineTable'>101T 32608F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>128</td>
+<td class='lineTable'> <pre class='codegrey'>      active           &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>129</td>
+<td class='lineTable'> <pre class='codegrey'>      expected_bits    &lt= '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>130</td>
+<td class='lineTable'> <pre class='codegrey'>      input_bits_seen  &lt= '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>131</td>
+<td class='lineTable'> <pre class='codegrey'>      output_bits_seen &lt= '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>132</td>
+<td class='lineTable'> <pre class='codegrey'>      m_axis_tdata     &lt= '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>133</td>
+<td class='lineTable'> <pre class='codegrey'>      m_axis_tkeep     &lt= '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>134</td>
+<td class='lineTable'> <pre class='codegrey'>      m_axis_tvalid    &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>135</td>
+<td class='lineTable'> <pre class='codegrey'>      m_axis_tlast     &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>136</td>
+<td class='lineTable'> <pre class='codegrey'>      done             &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>137</td>
+<td class='lineTable'> <pre class='codegrey'>      error            &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>138</td>
+<td class='lineTable'> <pre class='codegrey'>    end else begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>139</td>
+<td class='lineTable'> <pre class='codegrey'>      // done/error are one-cycle events; the controller is responsible for</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>140</td>
+<td class='lineTable'> <pre class='codegrey'>      // latching completion/error status if it needs persistence.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>141</td>
+<td class='lineTable'> <pre class='codegrey'>      done  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>142</td>
+<td class='lineTable'> <pre class='codegrey'>      error &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>143</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>144</td>
+<td class='lineTable'> <pre class='codered'>      if (start && active) begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 16</b></font></td>
+<td class='lineTable'>32608</td>
+<td class='lineTable'>0T 32608F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>145</td>
+<td class='lineTable'> <pre class='codegrey'>        // A second start while busy is a protocol error.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>146</td>
+<td class='lineTable'> <pre class='codegrey'>        active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>147</td>
+<td class='lineTable'> <pre class='codegrey'>        m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>148</td>
+<td class='lineTable'> <pre class='codegrey'>        m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>149</td>
+<td class='lineTable'> <pre class='codegrey'>        error         &lt= 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>150</td>
+<td class='lineTable'> <pre class='codered'>      end else if (abort && active) begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 17</b></font></td>
+<td class='lineTable'>32608</td>
+<td class='lineTable'>0T 32608F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>151</td>
+<td class='lineTable'> <pre class='codegrey'>        active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>152</td>
+<td class='lineTable'> <pre class='codegrey'>        m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>153</td>
+<td class='lineTable'> <pre class='codegrey'>        m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>154</td>
+<td class='lineTable'> <pre class='codegrey'>        error         &lt= 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>155</td>
+<td class='lineTable'> <pre class='codegreen'>      end else if (start && !active) begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 18</b></font></td>
+<td class='lineTable'>32608</td>
+<td class='lineTable'>14T 32594F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>156</td>
+<td class='lineTable'> <pre class='codegrey'>        m_axis_tvalid    &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>157</td>
+<td class='lineTable'> <pre class='codegrey'>        m_axis_tlast     &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>158</td>
+<td class='lineTable'> <pre class='codegrey'>        input_bits_seen  &lt= '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>159</td>
+<td class='lineTable'> <pre class='codegrey'>        output_bits_seen &lt= '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>160</td>
+<td class='lineTable'> <pre class='codered'>        if ((transfer_length == 0) || (transfer_length[2:0] != 0) ||</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 19</b></font></td>
+<td class='lineTable'>14</td>
+<td class='lineTable'>0T 14F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>161</td>
+<td class='lineTable'> <pre class='codegrey'>            (DATA_WIDTH &lt 8) || ((DATA_WIDTH % 8) != 0)) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>162</td>
+<td class='lineTable'> <pre class='codegrey'>          active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>163</td>
+<td class='lineTable'> <pre class='codegrey'>          expected_bits &lt= '0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>164</td>
+<td class='lineTable'> <pre class='codegrey'>          error         &lt= 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>165</td>
+<td class='lineTable'> <pre class='codegreen'>        end else begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 20</b></font></td>
+<td class='lineTable'>14</td>
+<td class='lineTable'>14T </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>166</td>
+<td class='lineTable'> <pre class='codegrey'>          active        &lt= 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>167</td>
+<td class='lineTable'> <pre class='codegrey'>          expected_bits &lt= {1'b0, transfer_length};</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>168</td>
+<td class='lineTable'> <pre class='codegrey'>        end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>169</td>
+<td class='lineTable'> <pre class='codegrey'>      end else if (active) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable' align ='left'> <pre class='codered'> MISSING ELSE </pre> <font face='arial' color=orange style='font-size: 12px'><b> Branch 21</b></font></td>
+<td class='lineTable'> </td>
+<td class='lineTable'> 23631</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>170</td>
+<td class='lineTable'> <pre class='codegrey'>        // Any malformed accepted beat aborts the transfer. If input and output</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>171</td>
+<td class='lineTable'> <pre class='codegrey'>        // handshakes coincide, an error on either side takes priority; no stale</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>172</td>
+<td class='lineTable'> <pre class='codegrey'>        // valid beat is retained after the transaction has failed.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>173</td>
+<td class='lineTable'> <pre class='codered'>        if ((output_fire && (!output_keep_ok || (m_axis_tlast != output_expected_last))) ||</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 22</b></font></td>
+<td class='lineTable'>8963</td>
+<td class='lineTable'>0T 8963F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>174</td>
+<td class='lineTable'> <pre class='codegrey'>            (input_fire  && (!input_keep_ok  || (s_axis_tlast != input_expected_last)))) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>175</td>
+<td class='lineTable'> <pre class='codegrey'>          active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>176</td>
+<td class='lineTable'> <pre class='codegrey'>          m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>177</td>
+<td class='lineTable'> <pre class='codegrey'>          m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>178</td>
+<td class='lineTable'> <pre class='codegrey'>          error         &lt= 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>179</td>
+<td class='lineTable'> <pre class='codegrey'>        end else begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>180</td>
+<td class='lineTable'> <pre class='codegrey'>          // Pop first. Crucial fix: clear TVALID on every non-final output</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>181</td>
+<td class='lineTable'> <pre class='codegrey'>          // handshake. If a new input beat is accepted on the same edge, the</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>182</td>
+<td class='lineTable'> <pre class='codegrey'>          // input block below replaces this empty slot and reasserts TVALID.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>183</td>
+<td class='lineTable'> <pre class='codegrey'>          if (output_fire) begin</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable' align ='left'> <pre class='codered'> MISSING ELSE </pre> <font face='arial' color=orange style='font-size: 12px'><b> Branch 23</b></font></td>
+<td class='lineTable'> </td>
+<td class='lineTable'> 8924</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>184</td>
+<td class='lineTable'> <pre class='codegrey'>            output_bits_seen &lt= output_bits_seen + output_beat_bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>185</td>
+<td class='lineTable'> <pre class='codegreen'>            if (m_axis_tlast) begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 24</b></font></td>
+<td class='lineTable'>39</td>
+<td class='lineTable'>13T 26F </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>186</td>
+<td class='lineTable'> <pre class='codegrey'>              active        &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>187</td>
+<td class='lineTable'> <pre class='codegrey'>              m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>188</td>
+<td class='lineTable'> <pre class='codegrey'>              m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>189</td>
+<td class='lineTable'> <pre class='codegrey'>              done          &lt= 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>190</td>
+<td class='lineTable'> <pre class='codegreen'>            end else begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 25</b></font></td>
+<td class='lineTable'>26</td>
+<td class='lineTable'>26T </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>191</td>
+<td class='lineTable'> <pre class='codegrey'>              m_axis_tvalid &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>192</td>
+<td class='lineTable'> <pre class='codegrey'>              m_axis_tlast  &lt= 1'b0;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>193</td>
+<td class='lineTable'> <pre class='codegrey'>            end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>194</td>
+<td class='lineTable'> <pre class='codegrey'>          end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>195</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>196</td>
+<td class='lineTable'> <pre class='codegrey'>          // Push. This later assignment intentionally replaces a beat popped</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>197</td>
+<td class='lineTable'> <pre class='codegrey'>          // in the same cycle, permitting one accepted beat per clock at full</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>198</td>
+<td class='lineTable'> <pre class='codegrey'>          // throughput while preserving stable output under backpressure.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>199</td>
+<td class='lineTable'> <pre class='codegreen'>          if (input_fire) begin</pre>
+ <font face='arial' color=orange style='font-size: 12px'><b> Branch 26</b></font></td>
+<td class='lineTable'>8963</td>
+<td class='lineTable'>39T 8924F </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable' align ='left'> <pre class='codered'> MISSING ELSE </pre> <font face='arial' color=orange style='font-size: 12px'><b> Branch 27</b></font></td>
+<td class='lineTable'> </td>
+<td class='lineTable'> 8924</td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>200</td>
+<td class='lineTable'> <pre class='codegrey'>            input_bits_seen &lt= input_bits_seen + input_beat_bits;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>201</td>
+<td class='lineTable'> <pre class='codegrey'>            m_axis_tdata    &lt= s_axis_tdata;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>202</td>
+<td class='lineTable'> <pre class='codegrey'>            m_axis_tkeep    &lt= s_axis_tkeep;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>203</td>
+<td class='lineTable'> <pre class='codegrey'>            m_axis_tvalid   &lt= 1'b1;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>204</td>
+<td class='lineTable'> <pre class='codegrey'>            m_axis_tlast    &lt= s_axis_tlast;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>205</td>
+<td class='lineTable'> <pre class='codegrey'>          end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>206</td>
+<td class='lineTable'> <pre class='codegrey'>        end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>207</td>
+<td class='lineTable'> <pre class='codegrey'>      end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>208</td>
+<td class='lineTable'> <pre class='codegrey'>    end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>209</td>
+<td class='lineTable'> <pre class='codegrey'>  end</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>210</td>
+<td class='lineTable'> <pre class='codegrey'> </pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>211</td>
+<td class='lineTable'> <pre class='codegrey'>  // Address decode is performed by memory_manager in this streaming design.</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>212</td>
+<td class='lineTable'> <pre class='codegrey'>  logic unused_source_address;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>213</td>
+<td class='lineTable'> <pre class='codegrey'>  always_comb unused_source_address = ^source_address;</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+<tr class='lineTableHoverGrey'>
+<td class='lineTable'>214</td>
+<td class='lineTable'> <pre class='codegrey'>endmodule</pre> </td>
+<td class='lineTable'> </td>
+<td class='lineTable'> </td>
+</tr>
+</table>
+</div>
+<br clear=all>
+</div>
+<br clear=all>
+</div>
+</font>
+</div>
+<div class ='linesSection' style='padding-left:20px; padding-right:20px;'>
+<font face='arial' color=black style='font-size: 14px'>
+<div style='display:none' id='file_condcov'>
+<button class='fileCondCollapsible' id='button_file_condcov'> <font size='4' color=#b38f00> &#169; </font>
+ Condition Coverage of File 11 : /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv</button> 
+<div class='fileCondContent'>
+<br clear=all>
+<font size='2' face='arial' style='padding-left:6px'>
+Condition Coverage Summary for File : /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv
+</font>
+<br clear=all>
+<table class='fileScoreTable'>
+<tr>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Total Conditions </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Covered Conditions </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Uncovered Conditions </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Condition Coverage Score </th>
+</tr>
+<tr>
+<td class='fileScoreTable'>30</td>
+<td class='fileScoreTable'>23</td>
+<td class='fileScoreTable'>7</td>
+<td class='fileScoreTable' bgcolor='#FFFFC2'>76.6667</td>
+</tr>
+</table>
+<br clear=all>
+<div class='condCoverageTable'>
+<table class='lineTable'>
+<tr>
+<th class='lineTable' style='background-color:#FFDD99; line-height:0;' width='80px'> LineNumber </th>
+<th class='lineTable' style='background-color:#FFEB99; line-height:0;'> Condition Result </th>
+<th class='lineTable' style='background-color:#80FFBF; line-height:1;' width='120px'> Evaluation Count </th>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>52</td>
+<td class='lineTable'> <pre class='codegreen'>(i < nbytes)__TRUE</pre> </td>
+<td class='lineTable'>78 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(i < nbytes)__FALSE</pre> </td>
+<td class='lineTable'>234 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>63</td>
+<td class='lineTable'> <pre class='codegreen'>(keep[i] == 1'b0)__TRUE</pre> </td>
+<td class='lineTable'>572 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(keep[i] == 1'b0)__FALSE</pre> </td>
+<td class='lineTable'>876 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>65</td>
+<td class='lineTable'> <pre class='codegreen'>(keep[i] == 1'b1)__TRUE</pre> </td>
+<td class='lineTable'>836 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(keep[i] == 1'b1)__FALSE</pre> </td>
+<td class='lineTable'>40 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>107</td>
+<td class='lineTable'> <pre class='codegreen'>(s_axis_tkeep == input_expected_keep)__TRUE</pre> </td>
+<td class='lineTable'>461 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(s_axis_tkeep == input_expected_keep)__FALSE</pre> </td>
+<td class='lineTable'>942 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>111</td>
+<td class='lineTable'> <pre class='codegreen'>(m_axis_tkeep == output_expected_keep)__TRUE</pre> </td>
+<td class='lineTable'>130 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(m_axis_tkeep == output_expected_keep)__FALSE</pre> </td>
+<td class='lineTable'>18 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>127</td>
+<td class='lineTable'> <pre class='codegreen'>(!rst_n)__TRUE</pre> </td>
+<td class='lineTable'>136 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(!rst_n)__FALSE</pre> </td>
+<td class='lineTable'>130418 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>155</td>
+<td class='lineTable'> <pre class='codegreen'>(!active)__TRUE</pre> </td>
+<td class='lineTable'>14 </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codered'>(!active)__FALSE</pre> </td>
+<td class='lineTable'>0 </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>160</td>
+<td class='lineTable'> <pre class='codered'>(transfer_length == 0)__TRUE</pre> </td>
+<td class='lineTable'>0 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(transfer_length == 0)__FALSE</pre> </td>
+<td class='lineTable'>14 </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>160</td>
+<td class='lineTable'> <pre class='codered'>(transfer_length[2:0] != 0)__TRUE</pre> </td>
+<td class='lineTable'>0 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(transfer_length[2:0] != 0)__FALSE</pre> </td>
+<td class='lineTable'>14 </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>161</td>
+<td class='lineTable'> <pre class='codered'>(DATA_WIDTH < 8)__TRUE</pre> </td>
+<td class='lineTable'>0 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(DATA_WIDTH < 8)__FALSE</pre> </td>
+<td class='lineTable'>14 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>161</td>
+<td class='lineTable'> <pre class='codegreen'>((DATA_WIDTH % 8) != 0)__TRUE</pre> </td>
+<td class='lineTable'>39 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>((DATA_WIDTH % 8) != 0)__FALSE</pre> </td>
+<td class='lineTable'>8938 </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>173</td>
+<td class='lineTable'> <pre class='codered'>(!output_keep_ok)__TRUE</pre> </td>
+<td class='lineTable'>0 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(!output_keep_ok)__FALSE</pre> </td>
+<td class='lineTable'>39 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>173</td>
+<td class='lineTable'> <pre class='codegreen'>(m_axis_tlast != output_expected_last)__TRUE</pre> </td>
+<td class='lineTable'>39 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(m_axis_tlast != output_expected_last)__FALSE</pre> </td>
+<td class='lineTable'>8963 </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>174</td>
+<td class='lineTable'> <pre class='codered'>(!input_keep_ok)__TRUE</pre> </td>
+<td class='lineTable'>0 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(!input_keep_ok)__FALSE</pre> </td>
+<td class='lineTable'>39 </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>174</td>
+<td class='lineTable'> <pre class='codered'>(s_axis_tlast != input_expected_last)__TRUE</pre> </td>
+<td class='lineTable'>0 </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'> </td>
+<td class='lineTable'> <pre class='codegreen'>(s_axis_tlast != input_expected_last)__FALSE</pre> </td>
+<td class='lineTable'>39 </td>
+</tr>
+</table>
+</div>
+<br clear=all>
+</div>
+<br clear=all>
+</div>
+</font>
+</div>
+<div class ='linesSection' style='padding-left:20px; padding-right:20px;'>
+<font face='arial' color=black style='font-size: 14px'>
+<div style='display:none' id='file_togglecov'>
+<button class='fileToggleCollapsible' id='button_file_togglecov'> <font size='4' color=#9999bb> &#8376; </font>
+ Toggle Coverage of File 11 : /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv</button> 
+<div class='fileToggleContent'>
+<br clear=all>
+<font size='2' face='arial' style='padding-left:6px'>
+Toggle Coverage Summary for File : /home/kaus/Desktop/ASIC/ASIC_Project/FPGAMultiProgrammer/rtl/dma/dma_controller.sv
+</font>
+<br clear=all>
+<table class='fileScoreTable'>
+<tr>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Total Toggles Variables </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Covered Variables </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Uncovered Variables </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Score </th>
+</tr>
+<tr>
+<td class='fileScoreTable'>15</td>
+<td class='fileScoreTable'>10</td>
+<td class='fileScoreTable'>5</td>
+<td class='fileScoreTable' bgcolor='#FFFFC2'>66.66</td>
+</tr>
+</table>
+<br clear=all>
+<table class='fileScoreTable'>
+<tr>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Total </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Covered </th>
+<th class='fileScoreTable' bgcolor='#DEE8EE'> Toggle Coverage Score </th>
+</tr>
+<tr>
+<td class='fileScoreTable'> <font size='2'> Total Bits </font> </td>
+<td class='fileScoreTable'> <font size='2'>362</font> </td>
+<td class='fileScoreTable'> <font size='2'>34</font> </td>
+<td class='fileScoreTable' bgcolor='#FF0000'> <font size='2'>9.39</td>
+</tr>
+<tr>
+<td class='fileScoreTable'> <font size='2'> Bits 0->1 </font> </td>
+<td class='fileScoreTable'> <font size='2'>181</font> </td>
+<td class='fileScoreTable'> <font size='2'>17 </font> </td>
+<td class='fileScoreTable' bgcolor='#FF0000'> <font size='2'>9.39</font> </td>
+</tr>
+<tr>
+<td class='fileScoreTable'> <font size='2'> Bits 1->0 </font> </td>
+<td class='fileScoreTable'> <font size='2'>181</font> </td>
+<td class='fileScoreTable'> <font size='2'>17</font> </td>
+<td class='fileScoreTable' bgcolor='#FF0000'> <font size='2'>9.39</font> </td>
+</tr>
+</table>
+<br clear=all>
+<div class='toggleCoverageTable'>
+<table class='lineTable' id='sortable1'>
+<tr>
+<th class='lineTable' style='background-color:#FFDD99; line-height:1;' width='80px' onclick='sortTable(1,0)'> LineNumber <button class='sortbutton1'> &#8645; </button></th>
+<th class='lineTable' style='background-color:#FFDD99; line-height:1;' width='80px' onclick='sortTable(1,1)'> Variable Type <button class='sortbutton1'> &#8645; </button></th>
+<th class='lineTable' style='background-color:#FFEB99; line-height:0;' onclick='sortTable(1,2)'> Variable <button class='sortbutton1'> &#8645; </button></th>
+<th class='lineTable' style='background-color:#80FFBF; line-height:1;' width='120px'> Toggle 0->1 </th>
+<th class='lineTable' style='background-color:#80FFBF; line-height:1;' width='120px'> Toggle 1->0 </th>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>33</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of active</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>34</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'>expected_bits [0]</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable' style='color:white;opacity:0'>34</td>
+<td class='lineTable' style='color:white;opacity:0'>logic</td>
+<td class='lineTable'> <pre class='codered'> All Other bits of expected_bits</pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>35</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codered'> All bits of input_bits_seen</pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>36</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codered'> All bits of output_bits_seen</pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>37</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codered'> All bits of input_beat_bits</pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+</tr>
+<tr class='lineTableHoverRed'>
+<td class='lineTable'>38</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codered'> All bits of output_beat_bits</pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+<td class='lineTable'> <pre class='codered'> 0 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>39</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of input_expected_keep</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>40</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of output_expected_keep</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>41</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of input_expected_last</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>42</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of output_expected_last</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>43</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of input_keep_ok</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>44</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of output_keep_ok</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>45</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of input_fire</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>46</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of output_fire</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+<tr class='lineTableHoverGreen'>
+<td class='lineTable'>212</td>
+<td class='lineTable'>logic</td>
+<td class='lineTable'> <pre class='codegreen'> All bits of unused_source_address</pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+<td class='lineTable'> <pre class='codegreen'> 1 </pre> </td>
+</tr>
+</table>
+</div>
+<br clear=all>
+</div>
+<br clear=all>
+</div>
+</font>
+</div>
+</div>
+</div>
+
+<script type='text/javascript' src='jsCodeCov/fileCollapse.js'></script>
+<script type='text/javascript' src='jsCodeCov/checkdisplay.js'></script>
+<script> function openFileContent(id) {document.getElementById(id).click();} </script>
+<script> sortTable(1,0) </script>
+</body>
+</html>

@@ -1,105 +1,146 @@
-# FPGA Programmer — Integrated Multi-Image Schedule Simulation
+# FPGA Programmer: Multi-Image Reconfiguration RTL
 
-This package contains the RTL files listed in the active Vivado design hierarchy and
-the single integrated simulation testbench shown in the active simulation set.
-
-## Contents
-- `rtl/`: 13 RTL source files from the active Vivado design hierarchy.
-- `tb/tb_multi_image_schedule.sv`: integrated three-image schedule testbench.
-- `tb/models/`: behavioral JTAG target and multi-image QSPI NOR flash models.
-- `sim/`: reserved for the saved waveform configuration and run evidence.
-- `scripts/`: reserved for helper scripts.
+This repository contains an RTL platform for sequencing configuration of multiple FPGA images stored in serial flash. The design coordinates metadata parsing, AXI4-Lite peripheral setup, AXI4-Stream image movement, JTAG programming, and target task-completion/error events.
 
 ## Architecture
 
-The top-level scheduler reads the multi-image metadata from flash, configures the
-control-register aperture over AXI4-Lite, and sequences each image through the
-memory, DMA, and JTAG datapath. Target status and task events are synchronized
-back into the scheduler; the interrupt controller aggregates completion and error
-events.
+The scheduler reads image metadata from the memory manager, configures the peripherals through the AXI4-Lite register aperture, and advances between images after target events. Metadata stream data goes directly to the scheduler; image data flows through the DMA bridge to the JTAG controller.
 
 ```mermaid
 flowchart LR
     START([schedule_start]) --> SCHED[time_multiplex_scheduler]
-    SCHED -->|AXI4-Lite writes| REGS[programmer_control_regs_axi]
-    REGS --> MEM[memory_manager]
-    REGS --> DMA[dma_controller]
-    REGS --> JTAG[jtag_controller]
+    SCHED <-->|AXI4-Lite control| REGS[programmer_control_regs_axi]
+    REGS -->|memory controls| MEM[memory_manager]
+    REGS -->|DMA controls| DMA[dma_controller]
+    REGS -->|JTAG controls| JTAG[jtag_controller]
 
-    MEM -->|metadata stream| SCHED
+    MEM -->|metadata stream in metadata mode| SCHED
     MEM -->|image AXI-Stream| DMA
     DMA -->|image AXI-Stream| JTAG
+    MEM --> IFACE{Selected flash interface}
+    IFACE --> SPI[SPI]
+    IFACE --> QSPI[QSPI]
+    IFACE --> OSPI[OSPI]
 
-    MEM --> FLASH{Flash interface}
-    FLASH --> SPI[SPI]
-    FLASH --> QSPI[QSPI]
-    FLASH --> OSPI[OSPI]
+    JTAG -->|TCK / TMS / TDI| TAP[Target FPGA TAP]
+    TAP -->|TDO| JTAG
 
-    JTAG -->|TCK / TMS / TDI| TARGET[Configured FPGA fabric]
-    TARGET -->|TDO and status feedback| JTAG
-    TARGET -->|task done / task error| SYNC[Input synchronizers]
-    SYNC --> SCHED
+    TARGET_STATUS[Target configuration status] --> SYNC[Two-flop synchronizers]
+    TARGET_EVENTS[Target task done / error] --> SYNC
+    SYNC -->|configuration status| SCHED
+    SYNC -->|task events| IRQ[interrupt_controller]
 
-    MEM -.->|done / error| IRQ[interrupt_controller]
+    MEM -.->|done / error| IRQ
     DMA -.->|done / error| IRQ
-    JTAG -.->|done / error / IDCODE| IRQ
-    TARGET -.->|task events| IRQ
-    IRQ --> IRQOUT([irq / irq_status])
+    JTAG -.->|done / error / IDCODE ready| IRQ
+    IRQ -->|irq status| SCHED
+    SCHED -->|interrupt clear requests| IRQ
 
-    TB[tb_multi_image_schedule] -.->|drives and checks| TOP[fpga_multiphase_reconfig_top]
-    TOP -.->|instantiates| SCHED
+    PKG[programmer_pkg] -.->|shared types and constants| SCHED
+    PKG -.->|shared types and constants| REGS
+    PKG -.->|shared types and constants| MEM
+    PKG -.->|shared types and constants| JTAG
 ```
 
-The integrated simulation uses the QSPI path, a behavioral multi-image NOR flash,
-and a behavioral JTAG target. SPI and OSPI remain available as memory-manager
-interfaces for other configurations.
+The top-level RTL currently selects the QSPI path. SPI and OSPI interfaces are also exposed by the memory manager. The target FPGA is external to this RTL: the top-level accepts configuration-status and task-event inputs and provides the JTAG pins.
 
-## Vivado setup
-The original project used the simulation set `sim_multi_image_schedule`.
-The testbench top is `tb_multi_image_schedule`.
+## Repository layout
 
-Add the RTL sources to a design/source fileset and the three files under `tb/`
-to the simulation fileset. Set `programmer_pkg.sv` as a package source and ensure
-it is compiled before modules that import it. Use the SystemVerilog language mode.
+| Path | Purpose |
+| --- | --- |
+| `rtl/common/` | Shared package definitions and helper functions |
+| `rtl/top/` | Top-level multi-phase reconfiguration design |
+| `rtl/scheduler/` | Schedule sequencer and AXI4-Lite write master |
+| `rtl/axi/` | AXI4-Lite programmer control register block |
+| `rtl/memory/` | Memory manager and SPI, QSPI, OSPI, and flash-read RTL |
+| `rtl/dma/` | AXI4-Stream DMA bridge |
+| `rtl/jtag/` | JTAG TAP controller |
+| `rtl/controller/` | Interrupt controller |
+| `tb/tb_multi_image_schedule.sv` | Integrated three-image testbench source |
+| `tb/tb_rtl_coverage.sv` | Focused package, interrupt, and scheduler testbench |
+| `tb/models/` | Behavioral multi-image QSPI flash and JTAG target models |
+| `scripts/` | Vivado Tcl setup and simulation scripts |
 
-## Focused RTL coverage run
+## Vivado simulation
 
-`tb/tb_rtl_coverage.sv` is a separate XSim testbench for `programmer_pkg`,
-`interrupt_controller`, and `time_multiplex_scheduler`. It checks the package
-encodings and CRC helper, exercises interrupt masking/latching/clearing and
-simultaneous events, and drives the scheduler through an AXI write error and
-abort path. The simulation prints a functional coverage summary and stops on
-the first failed check.
+### Integrated multi-image testbench
 
-With the project open in Vivado, run this in the Tcl Console:
+The integrated testbench top is `tb_multi_image_schedule`. Add the RTL under `rtl/` to the design source set, then add these simulation sources to a simulation set:
+
+- `tb/tb_multi_image_schedule.sv`
+- `tb/models/qspi_nor_multi_image_model.sv`
+- `tb/models/jtag_target_model.sv`
+
+Compile `rtl/common/programmer_pkg.sv` before modules that import it, use SystemVerilog mode, and set `tb_multi_image_schedule` as the simulation top. The testbench source contains checks for a nominal three-image QSPI-to-JTAG flow. Those checks are not evidence of a successful integrated run unless the corresponding XSim transcript is available.
+
+With the intended Vivado project open, the helper script can add the package sources and launch the integrated simulation. Update the path for your checkout:
+
+```tcl
+source C:/path/to/ASIC_Project/scripts/add_package_to_vivado.tcl
+```
+
+### Focused RTL testbench
+
+The focused testbench targets `programmer_pkg`, `interrupt_controller`, and `time_multiplex_scheduler`. It checks package constants, enum values and CRC helper behavior; exercises interrupt capture, masking, sticky status and clearing; and drives a scheduler AXI write-error/abort scenario.
+
+With the project open in Vivado, run:
 
 ```tcl
 source C:/path/to/ASIC_Project/scripts/run_rtl_coverage.tcl
 ```
 
-The script creates/selects `sim_rtl_coverage` and sets `tb_rtl_coverage` as its
-top. This is independent of `sim_multi_image_schedule`; use the existing
-integrated testbench separately for end-to-end successful multi-image runs.
-The printed counts are directed functional scenarios, not an XSim code
-coverage percentage. They can guide additional tests for uncovered scheduler
-branches and package types.
+The script creates or reuses `sim_rtl_coverage`, adds the focused testbench and its required RTL, sets `tb_rtl_coverage` as simulation top, updates compile order, and launches XSim. This testbench is separate from the integrated simulation set.
 
-## Waveform note
-A waveform configuration (`.wcfg`) is a layout file, not the waveform trace itself.
-The supplied source archives did not include the active `.wcfg`, so it is not
-bundled here. Save it from Vivado using **File → Save Waveform Configuration As**
-and place it in `sim/`. Fresh traces are generated by rerunning the simulation.
+## Focused run results and coverage status
 
-## Scope
-This is an RTL simulation with behavioral flash and target models. It does not
-constitute validation of a physical FPGA bitstream or hardware.
+The supplied Vivado XSim transcript reported:
 
-## Add the package to an existing Vivado project
+| Target | Reported checks / scenarios |
+| --- | ---: |
+| `programmer_pkg` | 94 checked cases |
+| `interrupt_controller` | 12 checked scenarios |
+| `time_multiplex_scheduler` | 3 checked scenarios |
+| Scoreboard | 29 checks |
+| Simulation | Reached `$finish` at 390 ns without a testbench failure |
 
-1. Extract this ZIP.
-2. Open the intended `.xpr` project in Vivado.
-3. In the Tcl Console, run (adjust the extracted directory path):
-   `source /path/to/final_fpga_programmer_package/scripts/add_package_to_vivado.tcl`
-4. The script adds the packaged RTL to `sources_1`, adds the integrated TB and behavioral models to `sim_multi_image_schedule`, sets `tb_multi_image_schedule` as simulation top, updates compile order, and launches simulation.
+These are directed testbench check and scenario counts. They are **not** code-coverage or functional-coverage percentages. Although the current focused testbench contains SystemVerilog covergroups, the supplied successful transcript predates their addition. The subsequent `xcrg` attempt reported that no functional coverage database was found, so no XCRG percentage, bin total, or cross-coverage result is available. Rerun the simulation with recognized covergroups or enabled code coverage, confirm an XSim coverage database is created, and then run XCRG before reporting percentages.
 
-The script is designed to be rerun without adding the same package paths twice. It uses the package files in place; it does not copy them into the Vivado project directory.
+The integrated testbench also defines executable nominal-flow checks. Treat those as testbench expectations until a successful integrated XSim run log is archived.
+
+## Verification flow
+
+The two benches have different scopes. The focused bench checks selected package, interrupt, and scheduler behavior. The integrated bench connects the top-level RTL to behavioral flash and JTAG target models.
+
+```mermaid
+flowchart TB
+    subgraph FOCUSED["Focused RTL simulation"]
+        FTB[tb_rtl_coverage]
+        FTB --> PKG[programmer_pkg checks]
+        FTB --> IRQ[interrupt_controller scenarios]
+        FTB --> SCH[time_multiplex_scheduler AXI error and abort]
+        PKG --> COUNTS[Directed check counters]
+        IRQ --> COUNTS
+        SCH --> COUNTS
+    end
+
+    subgraph INTEGRATED["Integrated simulation"]
+        ITB[tb_multi_image_schedule]
+        ITB --> DUT[fpga_multiphase_reconfig_top]
+        ITB --> FLASH[qspi_nor_multi_image_model]
+        ITB --> JT[jtag_target_model]
+        FLASH <--> DUT
+        JT <--> DUT
+        DUT --> EXPECT[Nominal-flow pass/fail checks]
+    end
+
+    COUNTS --> CAVEAT[Counts are not coverage percentages]
+    XCRG[XCRG report request] --> DB{Coverage database found?}
+    DB -->|No in supplied attempt| PENDING[XCRG coverage unavailable]
+    DB -->|Yes after a future rerun| REPORT[Generate and review coverage report]
+```
+
+## Waveforms and hardware scope
+
+A `.wcfg` file stores a waveform viewer layout; it is not the waveform trace. Save a configuration from Vivado with **File → Save Waveform Configuration As** if you want to preserve a signal layout. Simulation traces are generated by rerunning XSim.
+
+This package documents RTL simulation with behavioral flash and JTAG target models. It does not establish physical-board operation, bitstream correctness on a target device, synthesis utilization, or timing closure.

@@ -11,6 +11,7 @@
 *.dcp
 *.runs/
 *.sim/
+/verilator/
 
 # Keep a consciously selected waveform config if committed
 # (do not ignore *.wcfg globally)

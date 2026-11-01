@@ -62,6 +62,28 @@ Add the RTL sources to a design/source fileset and the three files under `tb/`
 to the simulation fileset. Set `programmer_pkg.sv` as a package source and ensure
 it is compiled before modules that import it. Use the SystemVerilog language mode.
 
+## Focused RTL coverage run
+
+`tb/tb_rtl_coverage.sv` is a separate XSim testbench for `programmer_pkg`,
+`interrupt_controller`, and `time_multiplex_scheduler`. It checks the package
+encodings and CRC helper, exercises interrupt masking/latching/clearing and
+simultaneous events, and drives the scheduler through an AXI write error and
+abort path. The simulation prints a functional coverage summary and stops on
+the first failed check.
+
+With the project open in Vivado, run this in the Tcl Console:
+
+```tcl
+source C:/path/to/ASIC_Project/scripts/run_rtl_coverage.tcl
+```
+
+The script creates/selects `sim_rtl_coverage` and sets `tb_rtl_coverage` as its
+top. This is independent of `sim_multi_image_schedule`; use the existing
+integrated testbench separately for end-to-end successful multi-image runs.
+The printed counts are directed functional scenarios, not an XSim code
+coverage percentage. They can guide additional tests for uncovered scheduler
+branches and package types.
+
 ## Waveform note
 A waveform configuration (`.wcfg`) is a layout file, not the waveform trace itself.
 The supplied source archives did not include the active `.wcfg`, so it is not

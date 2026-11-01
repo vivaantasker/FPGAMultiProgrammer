@@ -36,6 +36,8 @@ module dma_controller #(
   logic [COUNT_WIDTH-1:0] output_bits_seen;
   logic [COUNT_WIDTH-1:0] input_beat_bits;
   logic [COUNT_WIDTH-1:0] output_beat_bits;
+  logic [COUNT_WIDTH-1:0] input_remaining_bytes_wide;
+  logic [COUNT_WIDTH-1:0] output_remaining_bytes_wide;
   logic [BYTES_PER_WORD-1:0] input_expected_keep;
   logic [BYTES_PER_WORD-1:0] output_expected_keep;
   logic input_expected_last;
@@ -45,11 +47,13 @@ module dma_controller #(
   logic input_fire;
   logic output_fire;
 
-  function automatic logic [BYTES_PER_WORD-1:0] keep_for_bytes(input logic [31:0] nbytes);
+  function automatic logic [BYTES_PER_WORD-1:0] keep_for_bytes(
+    input logic [COUNT_WIDTH-1:0] nbytes
+  );
     logic [BYTES_PER_WORD-1:0] result;
     result = '0;
     for (int i = 0; i < BYTES_PER_WORD; i++) begin
-      if (i < nbytes) result[i] = 1'b1;
+      if (COUNT_WIDTH'(i) < nbytes) result[i] = 1'b1;
     end
     return result;
   endfunction
@@ -72,20 +76,22 @@ module dma_controller #(
   always_comb begin
     input_beat_bits  = $countones(s_axis_tkeep) * 8;
     output_beat_bits = $countones(m_axis_tkeep) * 8;
+    input_remaining_bytes_wide = (expected_bits - input_bits_seen) / 8;
+    output_remaining_bytes_wide = (expected_bits - output_bits_seen) / 8;
 
     input_expected_keep  = '0;
     output_expected_keep = '0;
     if (active && (input_bits_seen < expected_bits)) begin
-      if ((expected_bits - input_bits_seen) >= DATA_WIDTH)
+      if ((expected_bits - input_bits_seen) >= COUNT_WIDTH'(DATA_WIDTH))
         input_expected_keep = '1;
       else
-        input_expected_keep = keep_for_bytes((expected_bits - input_bits_seen) / 8);
+        input_expected_keep = keep_for_bytes(input_remaining_bytes_wide);
     end
     if (active && (output_bits_seen < expected_bits)) begin
-      if ((expected_bits - output_bits_seen) >= DATA_WIDTH)
+      if ((expected_bits - output_bits_seen) >= COUNT_WIDTH'(DATA_WIDTH))
         output_expected_keep = '1;
       else
-        output_expected_keep = keep_for_bytes((expected_bits - output_bits_seen) / 8);
+        output_expected_keep = keep_for_bytes(output_remaining_bytes_wide);
     end
 
     input_expected_last  = ((input_bits_seen + input_beat_bits) == expected_bits);
